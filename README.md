@@ -14,8 +14,8 @@
 
 * I    Requirements
 * II   Setup environments
-* III  Create Database
-* IIII My Shell
+* III  build-in server
+* IIII Create Database
 * V   All API
 * VI  href="#id6">Database
 * VII Testing
@@ -34,10 +34,6 @@
 
 # Setup Environments
 
-* you should have `Apache Server`
-  * wamp , mamp ,xampp ,lampp
-* or alternative you run
-  * > php artisan serve
 * install all dependencies except dev
 
      ```bash
