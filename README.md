@@ -31,9 +31,8 @@
 
   * - MySql Database : `MySQL ,Psql`
   * - Composer installed on your machine
-  * - Composer installed on your machine
 
-# how application work
+# Setup Environments
 
 * you should have `Apache Server`
   * wamp , mamp ,xampp ,lampp
