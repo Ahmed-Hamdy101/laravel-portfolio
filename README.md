@@ -12,21 +12,39 @@
 
 # overview
 
- - what is laravel
+* I    Requirements
+* II   Setup environments
+* III  Create Database
+* IIII My Shell
+* V   All API
+* VI  href="#id6">Database
+* VII Testing
 
 # what is Laravel
 
-- Laravel is a web application framework with expressive, elegant syntax. We believe development must
+* Laravel is a web application framework with expressive, elegant syntax. We believe development must
+
+# requirements
+  - * PHP >= 8.0
+
+  - * Apache server [ `wamp,mamp,xampp,lampp` ] or u can use build-in server
+
+  * - MySql Database : `MySQL ,Psql`
+  * - Composer installed on your machine
+  * - Composer installed on your machine
 
 # how application work
- - you should have `Apache Server`
-    - wamp , mamp ,xampp ,lampp 
- - or alternative you run
-   - > php artisan serve
-- install all dependencies except dev
+
+* you should have `Apache Server`
+  * wamp , mamp ,xampp ,lampp
+* or alternative you run
+  * > php artisan serve
+* install all dependencies except dev
+
      ```bash
     > composer install --no-dev
     > npm install
     > npm run watch
     ```
-- create database and migrate tables
+
+* create database and migrate tables
