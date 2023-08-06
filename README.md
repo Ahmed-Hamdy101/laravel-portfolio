@@ -14,7 +14,7 @@
 * I    Requirements
 * II   Setup environments
 * III  build-in server
-* IIII Create Database
+* IIII Create Database  with phpmyadmin
 * V   All API
 * VI  href="#id6">Database
 * VII Testing
@@ -49,3 +49,7 @@
    ```php
    php artisan migrate:rollback 
    ```
+# build-in server
+- Run larvel server
+   - > php artisan serve
+# create database with php my admin
