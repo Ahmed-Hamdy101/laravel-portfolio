@@ -11,13 +11,13 @@
 
 # overview
 
-* I    Requirements
-* II   Setup environments
-* III  build-in server
-* IIII Create Database  with phpmyadmin
-* V   All API
-* VI  href="#id6">Database
-* VII Testing
+- ####  I    Requirements
+- ####   II   Setup environments
+- ####   III  build-in server
+- ####   IIII Create Database  with - phpmyadmin
+- ####   V   Api test
+- ####   VI unit test 
+####   VII Testing
 
 # what is Laravel
 
@@ -52,4 +52,23 @@
 # build-in server
 - Run larvel server
    - > php artisan serve
-# create database with php my admin
+# Create database with php my admin
+1. open browser and go to http://localhost/phpmyadmin
+2. click new button in left side bar
+3. enter name of the databse you want to create (ex: test)
+4. select type as "utf8mb4"
+5. click submit
+
+# api testing
+1. open postman app
+2. import file from project folder named "api_test.postman_collection.json".
+3. change url to localhost:port/api/v1/{route} where port =
+default port number for laravel server(8000).
+4. hit send request.
+
+# unit test
+```bash
+> vendor\bin\phpunit tests\\Unit\\{nameOfTestFile}.php
+or
+> vendor\bin\phpunit {pathToTheFolderContainingTests}\\{nameOfTestFile}.php
+```
