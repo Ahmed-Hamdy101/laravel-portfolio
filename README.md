@@ -11,13 +11,13 @@
 
 # overview
 
-- ####  I    What is Laravel
-- ####  I    Requirements
-- ####   II   Create Database with - phpmyadmin
-- ####   III  build-in server
-- ####   IIII Setup environments 
-- ####   V    Api test
-- ####   VI   unit test 
+- ####  I     What is Laravel
+- ####  II    Requirements
+- ####  III   Create Database with - phpmyadmin
+- ####  IIII  Setup environments 
+- ####   V    build-in server
+- ####   VI    Api test
+- ####   VII   unit test 
 
 # what is Laravel
 
@@ -37,6 +37,8 @@
 4. select type as "utf8mb4"
 5. click submit
 
+   ```
+
 # Setup Environments
 
 * install all dependencies except dev
@@ -54,7 +56,7 @@
 * rollback
    ```php
    > php artisan migrate:rollback 
-   ```
+
 # build-in server
 - Run larvel server
    - > php artisan serve
