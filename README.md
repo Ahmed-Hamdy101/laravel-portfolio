@@ -56,7 +56,7 @@
 * rollback
    ```php
    > php artisan migrate:rollback 
-
+   ``
 # build-in server
 - Run larvel server
    - > php artisan serve
