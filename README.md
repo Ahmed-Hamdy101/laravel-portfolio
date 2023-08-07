@@ -11,13 +11,13 @@
 
 # overview
 
+- ####  I    What is Laravel
 - ####  I    Requirements
-- ####   II   Setup environments
+- ####   II   Create Database with - phpmyadmin
 - ####   III  build-in server
-- ####   IIII Create Database  with - phpmyadmin
-- ####   V   Api test
-- ####   VI unit test 
-####   VII Testing
+- ####   IIII Setup environments 
+- ####   V    Api test
+- ####   VI   unit test 
 
 # what is Laravel
 
@@ -30,6 +30,12 @@
 
   * - MySql Database : `MySQL ,Psql`
   * - Composer installed on your machine
+# Create database with php my admin
+1. open browser and go to http://localhost/phpmyadmin
+2. click new button in left side bar
+3. enter name of the databse you want to create (ex: test)
+4. select type as "utf8mb4"
+5. click submit
 
 # Setup Environments
 
@@ -52,12 +58,6 @@
 # build-in server
 - Run larvel server
    - > php artisan serve
-# Create database with php my admin
-1. open browser and go to http://localhost/phpmyadmin
-2. click new button in left side bar
-3. enter name of the databse you want to create (ex: test)
-4. select type as "utf8mb4"
-5. click submit
 
 # api testing
 1. open postman app
