@@ -1,30 +1,20 @@
-<x-app-layout>
-    <x-slot name="header">
-        <div class="flex flex-row py-4 ">
-            <x-nav-link>
-                <a href="https://flowbite.com/" class="flex items-center">
-                    <span
-                        class="self-center text-xl font-semibold whitespace-nowrap dark:text-white mr-3">Flowbite</span>
-                </a>
-            </x-nav-link>
-            <x-nav-link>
-                <a href="https://flowbite.com/" class="flex items-center">
-                    <span class="self-center text-base mx-3 whitespace-nowrap dark:text-white mt-1 mr-3">Home</span>
-                </a>
-            </x-nav-link>
-            <x-nav-link>
-                <a href="https://flowbite.com/" class="flex ">
-                    <span class="self-center text-base whitespace-nowrap dark:text-white mt-1 ml-3">About</span>
-                </a>
-            </x-nav-link>
+<x-guest-layout>
+    <nav class="flex flex-row text-white h-20 p-2">
+        <li> <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row p-4 text-lg">PF</a></li>
+        <ul class="flex flex-row p-4 ml-auto">
+            <li> <a href="http://" target="_blank" rel="noopener noreferrer " class="text-xs ml-10">ABOUT</a></li>
+            <li> <a href="http://" target="_blank" rel="noopener noreferrer" class="text-xs ml-5">SKILLS</a></li>
+            <li> <a href="http://" target="_blank" rel="noopener noreferrer" class="text-xs ml-5">PROJECT</a></li>
+        </ul>
+    </nav>
 
-
-                <x-nav-link>
-                    <a href="{{ route('login') }}" class="text-md text-gray-700 flex items-center ">Login</a>
-                </x-nav-link>
-                <x-nav-link>
-                    <a href="{{ route('register') }}" class="ml-4 text-md text-gray-700 flex items-center ">Register</a>
-                </x-nav-link>
+    <main class="container grid grid-cols-2 gap-6">
+        <div class="hero ml-4 pt-28 text-white" >
+            <h1 class="text-5xl "> Lets Build Your Portfolio</h1>
+            <p class=" text-justify leading-6 mt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, porro consequatur placeat, dignissimos deleniti molestias vitae iste quia corrupti quidem tempore cumque deserunt earum officia eos ipsam harum dolorum quos.</p>
         </div>
-    </x-slot>
-</x-app-layout>
+        <div class="ml-4 pt-28 text-white ">
+            #image
+        </div>
+    </main>
+</x-guest-layout>
