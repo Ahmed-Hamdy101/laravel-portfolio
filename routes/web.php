@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','App\Http\Controllers\Backend\Home@index');
+Route::get('/', 'App\Http\Controllers\Backend\Home@index');
 
-Route::middleware(['auth'])->group(function(){
+Route::middleware(['auth'])->group(function () {
 
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-Route::resource('/skills',SkillController::class);    
-Route::resource('/projects',ProjectController::class);    
+    Route::resource('/skills', SkillController::class);
+    Route::resource('/projects', ProjectController::class);
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
