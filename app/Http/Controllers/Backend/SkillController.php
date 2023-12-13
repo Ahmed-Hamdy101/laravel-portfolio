@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreSkillRequest;
-use Illuminate\Http\Request;
 use App\Models\Skill;
+use Illuminate\Http\Response;
 
 class SkillController extends Controller
 {
@@ -32,7 +32,7 @@ class SkillController extends Controller
         // if the file it has 
         if ($request->hasFile('image')) {
             // valid the image 
-            $image = $request->file('image')->store('skills');
+            $image = $request->file('image')->store('skills', 'public');
             // create new skills from req form
             Skill::create(
                 [
@@ -50,5 +50,9 @@ class SkillController extends Controller
     public function edit(Skill $skill)
     {
         return view('skills.edit', compact('skill'));
+    }
+    public function destroy($id)
+    {   Skill::destroy($id);
+        return response('user delete successfully', Response::HTTP_NO_CONTENT);
     }
 }
