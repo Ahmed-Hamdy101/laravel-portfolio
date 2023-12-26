@@ -15,12 +15,11 @@
         <x-auth-session-status class="mb-4" :status="session('status')" />
   
     <!-- Validation Errors -->
-      <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-<form method="POST" action="{{ route('skills.edit',$skill->id )}}" class="p-4" enctype="multipart/form-data">
-                @csrf
-                @method('PUT')
-
+<form method="POST" action="{{ route('skills.update', ['skill' => $skill->id]) }}" class="p-4" enctype="multipart/form-data">
+    @csrf
+    @method('PUT')
      <!-- Name -->
      <div>
          <x-label for="name" :value="__('Name')"/>
